@@ -39,6 +39,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-fD-WJt">
                                 <rect key="frame" x="171.5" y="702" width="71" height="71"/>
                                 <state key="normal" image="startRunningButton"/>
+                                <connections>
+                                    <segue destination="dWU-7I-ALX" kind="show" id="sbA-WM-6Ze"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-Be-8yS">
                                 <rect key="frame" x="336" y="603" width="58" height="58"/>
@@ -71,6 +74,124 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ml7-k3-uJ9">
+            <objects>
+                <viewController id="dWU-7I-ALX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4sA-Kt-TWl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="Gkq-vR-maq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ldp-nv-lD9">
+                                <rect key="frame" x="0.0" y="233" width="414" height="247"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On Run" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZW-ZO-DQB">
+                                <rect key="frame" x="163.5" y="85" width="87.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DD2-jf-c06">
+                                <rect key="frame" x="149.5" y="291.5" width="115" height="130.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ave. Pace" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gh-me-cNV">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdZ-bY-gHK">
+                                        <rect key="frame" x="5.5" y="34.5" width="104" height="68.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/mi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="036-zs-VW0">
+                                        <rect key="frame" x="42.5" y="103" width="30.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zra-6D-EXu">
+                                <rect key="frame" x="143" y="156.5" width="128.5" height="42.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="MKV-Ev-biS">
+                                <rect key="frame" x="157" y="535" width="100.5" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgC-KZ-PlC">
+                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 mi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz3-iS-tBj">
+                                        <rect key="frame" x="0.0" y="53.5" width="100.5" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunOutline" translatesAutoresizingMaskIntoConstraints="NO" id="BE1-dc-Ywj">
+                                <rect key="frame" x="66" y="747" width="232" height="75"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytp-2d-yGU">
+                                <rect key="frame" x="274" y="747" width="75" height="75"/>
+                                <state key="normal" image="pauseButton"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="DbN-Px-1zx">
+                                <rect key="frame" x="74" y="756" width="57" height="57"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END RUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9g-I3-TRE">
+                                <rect key="frame" x="158" y="772" width="80.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Gkq-vR-maq" secondAttribute="bottom" id="8LH-ZF-QFU"/>
+                            <constraint firstItem="Ldp-nv-lD9" firstAttribute="leading" secondItem="MTP-8h-NYr" secondAttribute="leading" id="8yj-95-YQ2"/>
+                            <constraint firstItem="qZW-ZO-DQB" firstAttribute="top" secondItem="MTP-8h-NYr" secondAttribute="top" constant="41" id="90N-7c-lyu"/>
+                            <constraint firstItem="ytp-2d-yGU" firstAttribute="leading" secondItem="BE1-dc-Ywj" secondAttribute="trailing" constant="-24" id="Cn8-WS-rkP"/>
+                            <constraint firstItem="DD2-jf-c06" firstAttribute="centerX" secondItem="Ldp-nv-lD9" secondAttribute="centerX" id="DWy-fp-R8B"/>
+                            <constraint firstItem="Ldp-nv-lD9" firstAttribute="top" secondItem="Zra-6D-EXu" secondAttribute="bottom" constant="34" id="EJz-Rn-F8Z"/>
+                            <constraint firstItem="Zra-6D-EXu" firstAttribute="top" secondItem="qZW-ZO-DQB" secondAttribute="bottom" constant="37" id="F9g-I7-QPB"/>
+                            <constraint firstItem="Zra-6D-EXu" firstAttribute="centerX" secondItem="4sA-Kt-TWl" secondAttribute="centerX" id="LHL-2h-WXb"/>
+                            <constraint firstItem="I9g-I3-TRE" firstAttribute="centerY" secondItem="BE1-dc-Ywj" secondAttribute="centerY" id="OL9-0C-9Fc"/>
+                            <constraint firstItem="qZW-ZO-DQB" firstAttribute="centerX" secondItem="4sA-Kt-TWl" secondAttribute="centerX" id="Tak-7R-epE"/>
+                            <constraint firstItem="Gkq-vR-maq" firstAttribute="top" secondItem="MTP-8h-NYr" secondAttribute="top" id="UXk-Fx-EIZ"/>
+                            <constraint firstItem="MTP-8h-NYr" firstAttribute="bottom" secondItem="BE1-dc-Ywj" secondAttribute="bottom" constant="40" id="XAW-ji-PT8"/>
+                            <constraint firstItem="MKV-Ev-biS" firstAttribute="centerX" secondItem="4sA-Kt-TWl" secondAttribute="centerX" id="bLh-HS-HxP"/>
+                            <constraint firstItem="I9g-I3-TRE" firstAttribute="centerX" secondItem="BE1-dc-Ywj" secondAttribute="centerX" constant="16" id="eVP-T7-r2J"/>
+                            <constraint firstItem="Gkq-vR-maq" firstAttribute="leading" secondItem="MTP-8h-NYr" secondAttribute="leading" id="esC-vj-ckY"/>
+                            <constraint firstItem="Ldp-nv-lD9" firstAttribute="trailing" secondItem="MTP-8h-NYr" secondAttribute="trailing" id="fuk-09-jui"/>
+                            <constraint firstItem="DD2-jf-c06" firstAttribute="centerY" secondItem="Ldp-nv-lD9" secondAttribute="centerY" id="gzw-1Q-SGY"/>
+                            <constraint firstItem="ytp-2d-yGU" firstAttribute="centerY" secondItem="BE1-dc-Ywj" secondAttribute="centerY" id="k4N-P4-FT0"/>
+                            <constraint firstItem="MKV-Ev-biS" firstAttribute="top" secondItem="Ldp-nv-lD9" secondAttribute="bottom" constant="55" id="mqG-yi-b1e"/>
+                            <constraint firstItem="BE1-dc-Ywj" firstAttribute="leading" secondItem="DbN-Px-1zx" secondAttribute="trailing" constant="-65" id="o41-YC-4ZJ"/>
+                            <constraint firstItem="DbN-Px-1zx" firstAttribute="centerY" secondItem="BE1-dc-Ywj" secondAttribute="centerY" id="sR8-Rb-yYH"/>
+                            <constraint firstItem="BE1-dc-Ywj" firstAttribute="top" secondItem="MKV-Ev-biS" secondAttribute="bottom" constant="116" id="u8s-73-JQd"/>
+                            <constraint firstAttribute="trailing" secondItem="Gkq-vR-maq" secondAttribute="trailing" id="uSq-g1-Lod"/>
+                            <constraint firstItem="BE1-dc-Ywj" firstAttribute="centerX" secondItem="4sA-Kt-TWl" secondAttribute="centerX" constant="-25" id="wK7-eh-yq0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MTP-8h-NYr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xU8-8b-Ocz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478.2608695652175" y="-320.08928571428572"/>
         </scene>
         <!--My Log-->
         <scene sceneID="wg7-f3-ORb">
@@ -206,6 +327,9 @@
     <resources>
         <image name="BG" width="375" height="667"/>
         <image name="centerNavButton" width="58" height="58"/>
+        <image name="endRunButton" width="57" height="57"/>
+        <image name="endRunOutline" width="232" height="75"/>
+        <image name="pauseButton" width="75" height="75"/>
         <image name="startRunningButton" width="71" height="71"/>
         <image name="tabbar-myLogIconGray" width="25" height="25"/>
         <image name="tabbar-runIconGray" width="27" height="28"/>
