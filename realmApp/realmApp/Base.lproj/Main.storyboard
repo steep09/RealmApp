@@ -151,19 +151,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunOutline" translatesAutoresizingMaskIntoConstraints="NO" id="BE1-dc-Ywj">
                                 <rect key="frame" x="66" y="747" width="232" height="75"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytp-2d-yGU">
-                                <rect key="frame" x="274" y="747" width="75" height="75"/>
-                                <state key="normal" image="pauseButton"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="DbN-Px-1zx">
-                                <rect key="frame" x="74" y="756" width="57" height="57"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END RUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9g-I3-TRE">
                                 <rect key="frame" x="158" y="772" width="80.5" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="DbN-Px-1zx">
+                                <rect key="frame" x="74" y="756" width="57" height="57"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytp-2d-yGU">
+                                <rect key="frame" x="274" y="747" width="75" height="75"/>
+                                <state key="normal" image="pauseButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -194,6 +194,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MTP-8h-NYr"/>
                     </view>
+                    <connections>
+                        <outlet property="sliderImageView" destination="DbN-Px-1zx" id="joj-c1-pPS"/>
+                        <outlet property="swipeBGImageView" destination="BE1-dc-Ywj" id="FcC-D8-Ss0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU8-8b-Ocz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
