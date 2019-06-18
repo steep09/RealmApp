@@ -163,6 +163,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytp-2d-yGU">
                                 <rect key="frame" x="274" y="747" width="75" height="75"/>
                                 <state key="normal" image="pauseButton"/>
+                                <connections>
+                                    <action selector="pauseBtnPressed:" destination="dWU-7I-ALX" eventType="touchUpInside" id="5CH-5B-Amz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -195,6 +198,9 @@
                         <viewLayoutGuide key="safeArea" id="MTP-8h-NYr"/>
                     </view>
                     <connections>
+                        <outlet property="distanceLbl" destination="Uz3-iS-tBj" id="xV0-Ul-Ynh"/>
+                        <outlet property="durationLbl" destination="Zra-6D-EXu" id="kwI-C2-HEH"/>
+                        <outlet property="paceLbl" destination="OdZ-bY-gHK" id="aF9-6s-Kaz"/>
                         <outlet property="sliderImageView" destination="DbN-Px-1zx" id="joj-c1-pPS"/>
                         <outlet property="swipeBGImageView" destination="BE1-dc-Ywj" id="FcC-D8-Ss0"/>
                     </connections>
