@@ -18,6 +18,7 @@
 		A7FDB09722B9AA2F00169CB0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDB09622B9AA2F00169CB0 /* Extensions.swift */; };
 		A7FDB09922B9EA6300169CB0 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDB09822B9EA6300169CB0 /* Run.swift */; };
 		A7FDB09B22B9F5C800169CB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDB09A22B9F5C800169CB0 /* Constants.swift */; };
+		A7FDB09D22B9F87900169CB0 /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDB09C22B9F87900169CB0 /* RunLogCell.swift */; };
 		B92FD599E8D7E12EDE7E9CA3 /* Pods_realmApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D503EBC57555258984D9A4DD /* Pods_realmApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		A7FDB09622B9AA2F00169CB0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A7FDB09822B9EA6300169CB0 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		A7FDB09A22B9F5C800169CB0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A7FDB09C22B9F87900169CB0 /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
 		D503EBC57555258984D9A4DD /* Pods_realmApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realmApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 		A7FDB09022B9881800169CB0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7FDB09C22B9F87900169CB0 /* RunLogCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				A7FDB07922B9860D00169CB0 /* AppDelegate.swift in Sources */,
 				A7FDB09322B99A0400169CB0 /* CurrentRunVC.swift in Sources */,
 				A7FDB09922B9EA6300169CB0 /* Run.swift in Sources */,
+				A7FDB09D22B9F87900169CB0 /* RunLogCell.swift in Sources */,
 				A7FDB07B22B9860D00169CB0 /* BeginRunVC.swift in Sources */,
 				A7FDB09B22B9F5C800169CB0 /* Constants.swift in Sources */,
 			);
