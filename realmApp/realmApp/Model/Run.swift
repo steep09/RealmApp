@@ -62,6 +62,16 @@ class Run: Object {
         } catch {
             return nil
         }
+        
+    }
+    //get a single Run
+    static func getRun(byId id: String) -> Run? {
+        do {
+            let realm = try Realm(configuration: RealmConfig.runDataConfig)
+            return realm.object(ofType: Run.self, forPrimaryKey: id)
+        } catch {
+            return nil
+        }
     }
     
 }
